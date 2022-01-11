@@ -65,8 +65,8 @@ export class AssignmentDetailComponent implements OnInit {
   onClickEdit() {
     this.router.navigate(['/assignment', this.assignmentTransmis?.id, 'edit'], {
       queryParams: {
-        nom: 'buffa',
-        prenom: 'michel',
+        param1: 'param1',
+        param2: 'param2',
         debug: true,
       },
       fragment: 'edition',
