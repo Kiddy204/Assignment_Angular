@@ -175,7 +175,6 @@ export class AssignmentsComponent implements OnInit {
 
           })
         }
-        // this.assignmentsService.addAssignment(this.assignmentData)
           
       }
     } else {
