@@ -1,6 +1,11 @@
 # AssignmentApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+Ce projet est une application de Gestion  des Devoirs réalisé sur angluar
+
+
+# Deployment Link 
+
+https://assignment-miage.herokuapp.com/home
 
 ## Development server
 
