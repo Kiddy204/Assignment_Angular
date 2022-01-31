@@ -13,9 +13,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider'
 import {MatSnackBar} from '@angular/material/snack-bar';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatTableModule} from  '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -38,14 +38,15 @@ import { EditAssignmentComponent } from './assignments/edit-assignment/edit-assi
     NonrenduDirective,
     AssignmentDetailComponent,
     AddAssignmentComponent,
-    EditAssignmentComponent
+    EditAssignmentComponent,
+    
   ],
   imports: [
     BrowserModule, FormsModule,
     BrowserAnimationsModule, MatButtonModule, MatIconModule, MatDividerModule,
     MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule,
     MatListModule, MatCardModule, MatCheckboxModule, MatSlideToggleModule,
-    MatSliderModule,MatTableModule,MatPaginatorModule,
+    MatSliderModule,MatTableModule,MatPaginatorModule,MatToolbarModule,
     HttpClientModule,
     RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})
   ],

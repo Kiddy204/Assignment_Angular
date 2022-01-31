@@ -10,11 +10,12 @@ import { bdInitialAssignments } from './data';
 export class AssignmentsService {
   assignments:Assignment[] = [];
 
-  constructor(private loggingService:LoggingService,
+  constructor(
+    private loggingService:LoggingService,
     private http:HttpClient) { }
 
     url = 'https://assignment-miage-backend.herokuapp.com/api/assignments';
-    //url = 'localhost:8010/api';
+    //url = 'http://localhost:8010/api/assignments';
 
   getAssignments(limit:number):Observable<Assignment[]> {
     //return of(this.assignments);
@@ -51,7 +52,7 @@ export class AssignmentsService {
     // vers un web service qui fera un update dans une BD
 
     if(assignment)
-      this.loggingService.log(assignment.nom, "ajouté");
+      this.loggingService.log(assignment.nom, "updated");
 
     //return of("Assignment modifié");
     return this.http.put(this.url, assignment);

@@ -1,10 +1,9 @@
-<h1>
-  <nav>
-    <a routerLink="/home">{{titre}}</a>
-  </nav>
-</h1>
+
+<mat-toolbar>
+  <span>    <a routerLink="/home">{{titre}}</a>  </span>
+</mat-toolbar>
 <mat-slide-toggle (click)="loginLogout()">Login</mat-slide-toggle>
-<button mat-raised-button color="primary" (click)="genererDonneesDeTest()">Peupler BD</button>
+<!-- <button mat-raised-button color="primary" (click)="genererDonneesDeTest()">Peupler BD</button> -->
 
 <router-outlet></router-outlet>
 <!--
