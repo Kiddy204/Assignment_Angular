@@ -13,7 +13,7 @@ export class AssignmentsService {
   constructor(private loggingService:LoggingService,
     private http:HttpClient) { }
 
-    url = 'http://localhost:8010/api/assignments';
+    url = 'https://assignment-miage-backend.herokuapp.com/api/assignments';
     //url = 'localhost:8010/api';
 
   getAssignments(limit:number):Observable<Assignment[]> {
