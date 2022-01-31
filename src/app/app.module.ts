@@ -15,7 +15,6 @@ import { MatSliderModule } from '@angular/material/slider'
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { MatTableModule} from  '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 

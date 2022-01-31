@@ -181,6 +181,25 @@ export class AssignmentsComponent implements OnInit {
     } else {
       console.log('Enter des donnée valide !');
     }
+    
+  }
+
+  async onSubmitAssignment(assignment:Assignment) {
+     
+    if(assignment.rendu){
+      assignment.rendu=false;
+      console.log("False")
+    }else{
+      assignment.rendu=true;
+    }
+
+    
+
+    this.assignmentsService
+    .updateAssignment(assignment)
+    .subscribe((reponse) => {
+      console.log(reponse.message);
+    })
   }
   cancelEdit() {
     this.isEditMode = false;
